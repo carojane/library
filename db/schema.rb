@@ -11,15 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140910180805) do
+ActiveRecord::Schema.define(version: 20140910181219) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "books", force: true do |t|
-    t.string  "title",                    null: false
-    t.string  "author",                   null: false
-    t.boolean "favorite", default: false
+    t.string  "title",  null: false
+    t.string  "author", null: false
+    t.integer "rating"
   end
 
 end
