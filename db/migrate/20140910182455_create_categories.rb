@@ -4,6 +4,6 @@ class CreateCategories < ActiveRecord::Migration
       t.string :name, null: false
     end
 
-    add_index :categories, :name, unique: true
+    add_index :categories, :name, unique:
   end
 end
